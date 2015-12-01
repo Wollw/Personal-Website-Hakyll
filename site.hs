@@ -4,8 +4,14 @@ import           Data.Monoid (mappend)
 import           Hakyll
 
 --------------------------------------------------------------------------------
+config :: Configuration
+config = defaultConfiguration
+    { deployCommand = "rsync -av --delete _site/ /srv/http/wollw.com"
+    }
+
+--------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
