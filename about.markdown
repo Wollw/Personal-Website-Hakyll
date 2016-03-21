@@ -2,6 +2,8 @@
 title: About
 ---
 
+[Curriculum Vitae](/cv.html)
+
 Within canonical Buddhist teachings, the division of nama and rupa—or
 name and form—is presented as a particularly fundamental division. Unlike the
 common meaning of the word, name here refers to the formless qualities that
